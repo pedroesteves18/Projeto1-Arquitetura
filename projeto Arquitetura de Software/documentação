@@ -1,0 +1,15 @@
+O padrão de projeto comportamental escolhido foi o Strategy. Escolhi o Strategy pois é flexivel a várias tipos de estratégias,
+    tanto como no início,(funções de busca,inserção e remoção) como em manutenções ou adições futuras.
+
+O mesmo se aplica ao meu padrão estrutural, o Decorator, que assim como o Strategy, é facilmente editado no futuro, sem ter que mexer 
+    diretamente no Objeto Cidade
+
+O padrão de projeto Builder foi escolhido por permitir criar Objetos de diferentes tipos e em uma classe diferente.
+
+Adotei x refatorações dos princípos SOLID:
+    - Princípio da Responsabilidade Única:
+        Minhas classes possuem responsibilidades únicas, é possível ver isso principalmente nas classes do Strategy e na classe Cidade.
+    - Liskov Substitution Principle:
+        As classes sobre Cidade, estão aplicando este princípio pois em caso de alterações, não afetará o programa
+    - Interface Segregation Principle:
+        Não há interfaces com métodos que não estão em uso
